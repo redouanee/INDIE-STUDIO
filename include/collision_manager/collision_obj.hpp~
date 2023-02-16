@@ -1,0 +1,29 @@
+/*
+** EPITECH PROJECT, 2022
+** collision_obj.hpp
+** File description:
+** header
+*/
+
+#ifndef COLLISION_OBJ_HPP
+#define COLLISION_OBJ_HPP
+
+#include <vector>
+#include "raylib.hpp"
+
+namespace Raylib {
+
+    class Engine;
+
+    class CollisionObj {
+    private:
+        Engine &_engine;
+    public:
+
+        CollisionObj();
+        ~CollisionObj();
+        void update();
+    };
+}
+
+#endif

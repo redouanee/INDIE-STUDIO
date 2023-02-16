@@ -1,0 +1,25 @@
+/*
+** EPITECH PROJECT, 2022
+** collision_manager.hpp
+** File description:
+** functions
+*/
+
+#include <raylib.h>
+#include "raylib.hpp"
+#include "collision_obj.hpp"
+
+namespace Raylib {
+
+    CollisionObj::CollisionObj(Engine &engine) _engine(engine)
+    {
+    }
+
+    CollisionObj::~CollisionObj()
+    {
+    }
+
+    void CollisionObj::update()
+    {
+    }
+}

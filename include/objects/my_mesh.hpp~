@@ -1,0 +1,22 @@
+/*
+** EPITECH PROJECT, 2022
+** my_mesh.hpp
+** File description:
+** header
+*/
+
+#include <raylib.h>
+#include <iostream>
+#include "raylib.hpp"
+
+namespace Raylib {
+
+    class MyMesh {
+    private:
+        struct Mesh _mesh;
+    public:
+        MyMesh(float width, float height, float length);
+        ~MyMesh();
+        Mesh get_mesh();
+    };
+}

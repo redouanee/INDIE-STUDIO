@@ -1,0 +1,35 @@
+/*
+** EPITECH PROJECT, 2022
+** collision_obj.hpp
+** File description:
+** header
+*/
+
+#ifndef SOUND_OBJ_HPP
+#define SOUND_OBJ_HPP
+
+#include <memory>
+#include <vector>
+#include <string>
+#include "assets_manager.hpp"
+#include "my_music.hpp"
+#include "my_sound.hpp"
+
+namespace Raylib {
+
+    class Engine;
+
+    class SoundObj {
+    private:
+        Engine &_engine;
+        MyMusic _music;
+        std::vector<std::unique_ptr<MySound>> _sound;
+    public:
+
+        SoundObj(Engine &engine);
+        ~SoundObj();
+        void update();
+    };
+}
+
+#endif
